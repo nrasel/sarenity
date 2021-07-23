@@ -4,51 +4,14 @@ body{
 /* -----------------------------
      navbar  section start
 -------------------------------- */
-/* display: block;
-position: absolute;
-left: 28px;
-top: calc(100% + 30px);
-margin: 0;
-padding: 10px 0;
-z-index: 99;
-opacity: 0;
-visibility: hidden;
-background: #fff;
-box-shadow: 0px 0px 30px rgb(127 137 161 / 25%);
-transition: 0.3s; */
-.dropdown{
-    position: relative;
-}
-.navbar li{
-    position: relative;
-}
-.navbar .dropdown ul{
-    position: absolute;
-    display: block;
-    left: 28px;
-    top: calc(100% + 30px);
-    margin: 0;
-    padding: 0;
+/* .navigation-bar{
+    height: 70px;
+    z-index: 997;
+    transition: all 0.5s ease-in-out;
     background: #fff;
-    box-shadow: 0px 0px 30px rgb(127 137 161 / 25%);
-    opacity: 0;
-    visibility: hidden;
-    z-index: 99;
-}
-.dropdown a:hover .dropdown ul{
-    opacity: 1;
-    visibility: visible;
-}
-.dropdown ul li{
-    min-width: 200px;
-    list-style: none;
-}
-.navbar .dropdown ul a{
-    padding: 10px 20px;
-    font-size: 15px;
-    text-transform: none;
-    text-decoration: none;
-}
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    border-bottom: 2px solid rgb(175, 164, 164);
+} */
 .get-btn{
     color: #fff;
     background: #94c045;
@@ -72,6 +35,7 @@ transition: 0.3s; */
     position: relative;
     z-index: 1;
     margin-bottom: -140px;
+    padding-top: 140px;
 }
 .hero::before{
     position: absolute;
@@ -92,7 +56,7 @@ transition: 0.3s; */
 }
 .hero-info p{
     color: #eee;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-size: 24px;
 }
 .btn-outline{
@@ -326,3 +290,20 @@ transition: 0.3s; */
 .footer-bottom a:hover{
     color: #94c045;
 }
+
+@media (max-width: 491px) {
+    .hero-info h1{
+        margin: 0 0 10px 0;
+        font-size: 38px;
+        font-weight: 500;
+        line-height: 46px;
+        color: #fff;
+    }
+    .hero-info p{
+        color: #eee;
+        margin-bottom: 20px;
+        font-size: 17px;
+    }
+}
+
+
